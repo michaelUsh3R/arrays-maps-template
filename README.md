@@ -1,138 +1,107 @@
-# Technical HW: Stacks & Queues
-Please complete the following 4 functions. You can test by running the `pytest` or `python3` commands:
+# Technical HW: Arrays & Maps
+Please complete the following 3 functions. 
+You can test by running the `pytest` or `python3` commands:
 
-* To run just the main code for one problem: `python3 reverse.py`
-* To run the tests for one problem: `pytest reverse_test.py`
+* To run just the main code for one problem: `python3 frequency.py`
+* To run the tests for one problem: `pytest frequency_test.py`
 * To run all the tests prior to submission: `pytest`
 
 ### Files that should (& shouldn't!) be changed
 
 You **SHOULD** implement your problem solutions in the following files:
-* reverse.py
-* matching.py
-* generate_binary.py
-* count_longest.py
+* `frequency.py`
+* `multiply.py`
+* `tic_tac_toe.py`
 
 You **SHOULD NOT** modify the following files:
-* Queue.py
-* Stack.py
-* count_longest_test.py
-* generate_binary_test.py
-* matching_test.py
-* reverse_test.py
+* anything in the `files` folder
+* `frequency_test.py`
+* `multiply_test.py`
+* `tic_tac_toe_test.py`
 
-Looking for additional practice problems to prepare for the exam?
-* practice-problems.py
+Looking for additional practice problems to prepare for the exam? Checkout
+* programs in the `practice` folder
 
-### General Hints
-* _Thinking of using a loop? For loops are for strings, whiles are for Stacks & Queues!_
-* _The only way to iterate / loop through the Stack or Queue you've been given in this assignment is to destroy it (i.e., make it empty)._
+<!--### General Hints
+* ???-->
 
-## Problem 1: reverse queue
+## Problem 1: Word Frequency
 
-Write a function ```reverse``` in python that takes a
-queue as a parameter and returns a new queue in 
-reverse order. Your solution _should not_ use
-any built-in or library functions other than those in
-the `Stack` and `Queue` classes provided.
+Implement a function `word_frequencies` that takes
+a string filename as a parameter and returns a
+dictionary mapping each word in the text file
+to the total number of times it occurs. All
+letters should be treated as lower case, and both
+punctuation and numbers should be ignored.
+Letters separated by apostrophes should be left together
+(for example, `don't` becomes `dont`).
+Your solution may use string & file functions.
 
-| **Example call** | **Returns** |
-| -------------- | --------- |
-| `reverse( Q[1, 2, 3, 4] )` | `Q[4, 3, 2, 1]` |
-| `reverse( Q[hello] )` | `Q[olleh]` |
-| `reverse( Q[0] )` | `Q[0]` |
+**Example call**
 
-_Note:_ We are using the notation `Q[ ]` here to 
-differentiate our queues from lists or arrays.
+`print_map_by_value(word_frequencies("files/turing.txt"))`
 
-_**Hint**: use a stack to help! You can destroy the queue & make it empty!_
+**Outputs**
+```
+    10 the
+     4 code
+     3 of
+     2 turing
+     2 and
+     2 at
+     2 secret
+     2 war
+     2 enigma
+     1 imitation
+     1 game
+     1 based
+     1 on
+     1 real
+     1 life
+     1 story
+     1 legendary
+     1 cryptanalyst
+     1 alan
+     1 film
+     1 portrays
+     1 nail
+     1 biting
+     1 race
+     1 against
+     1 time
+     1 by
+     1 his
+     1 brilliant
+     1 team
+     1 breakers
+     1 britains
+     1 top
+     1 government
+     1 cypher
+     1 school
+     1 bletchley
+     1 park
+     1 during
+     1 darkest
+     1 days
+     1 world
+     1 ii
+     1 true
+     1 was
+     1 man
+     1 who
+     1 cracked
+     1 behind
+     1 every
+     1 is
+     1 an
+     1 unlock
+     1 win
+```
 
-## Problem 2: brace matcher
+_**Hint**: Looking for how to remove punctuation? 
+See https://www.techiedelight.com/remove-punctuations-string-python/_
 
-Write a function `matcher` in python that takes a
-string containing braces (`[{()}]`) as a parameter
-and returns True if the braces are matched, and
-False otherwise. The braces may be nested. 
-Your solution _should not_ use
-any built-in or library functions other than those in
-the `Stack` and `Queue` classes provided.
-
-| **Example call** | **Returns** |
-| -------------- | --------- |
-| `matcher("[()]")` | `True` |
-| `matcher("[(")` | `False` |
-| `matcher("hello")` | `True` |
-
-_**Hint**: use a stack!_
-
-## Problem 3: generate binary number strings
-
-Write a function ```generate_binary_numbers``` that
-takes a number _N_ as a parameter and returns a queue
-of binary number strings from _1_ to _N_ _without_ 
-using any built-in or library functions like `bin()`. 
-In fact, your solution _should not_ use
-any built-in or library functions other than those in
-the `Stack` and `Queue` classes provided.
-The front of the queue begins @ '1'. If _N_ is too 
-small, return an empty queue. 
-
-| **Example call** | **Returns** |
-| -------------- | --------- |
-| `generate_binary_numbers(2)` | `Q['1', '10']` |
-| `generate_binary_numbers(3)` | `Q['1', '10', '11']` |
-| `generate_binary_numbers(6)` | `Q['1', '10', '11', '100', '101', '110']` |
-
-_**Hint**: use an extra queue to help!_
-
-### Review: Binary Numbers
-
-Recall that the typical numbers we are used to
-working with every day are decimal numbers, or
-base 10. By contrast, computers  natively work
-with _**binary numbers**_, which are base 2.
-
-To read binary numbers, begin writing the powers
-of 2 from right to left:
-
-| **Binary** | **Decimal** |
-| -------------- | --------- |
-|2<sup>3</sup> 2<sup>2</sup> 2<sup>1</sup> 2<sup>0</sup> | |
-| `8 4 2 1` | |
-| `. . . 1` | 1 |
-| `. . 1 0` | 2 |
-| `. . 1 1` | 3 |
-| `. 1 0 0` | 4 |
-| `. 1 0 1` | 5 |
-| `. 1 1 0` | 6 |
-| `. 1 1 1` | 7 |
-| `1 0 0 0` | 8 |
-| `1 1 0 0` | 12 |
-| `1 1 1 1` | 15 |
-
-_Note:_ The dots (`.`) should **not** be in your final
-output, but are used here to align the numbers under
-the appropriate power of 2.
-
-## Problem 4: count the longest subsequence
-
-Write a function ```count_longest``` that takes a
-queue of characters as a parameter and returns the
-length of the longest consecutive subsequence. For
-example:
-
-| **Example call** | **Returns** |
-| -------------- | --------- |
-| `count_longest( Q[h, e, l, l, o] )` | `2` |
-| `count_longest( Q[m, m, m, m, m] )` | `5` |
-| `count_longest( Q[h, e, e, e] )` | `3` |
-| `count_longest( Q[ ] )` | `0` |
-
-_**Hint**: you can destroy the queue & make it empty!_
-
-Your solution _should not_ use
-any built-in or library functions other than those in
-the `Stack` and `Queue` classes provided.
 
 ## Getting started
 
@@ -170,11 +139,11 @@ If using PyCharm, you may need to fix your project setup.
 ### Run commands
 To run just the main code for one problem:
 
-`python3 reverse.py`
+`python3 file.py`
 
 To run the tests for one problem:
 
-`pytest reverse_test.py`
+`pytest file_test.py`
 
 To run all the tests prior to submission:
 
