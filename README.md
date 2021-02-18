@@ -19,7 +19,7 @@ You **SHOULD NOT** modify the following files:
 * `multiply_test.py`
 * `tic_tac_toe_test.py`
 
-Looking for additional practice problems to prepare for the exam? Checkout
+Looking for additional practice problems to prepare for the exam? Checkout:
 * programs in the `practice` folder
 
 <!--### General Hints
