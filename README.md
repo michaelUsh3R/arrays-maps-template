@@ -125,7 +125,7 @@ in implementing your solution.
 ## Problem 3: DID I WIN TIC-TAC-TOE?
 
 Write a function `did_I_win_2D` that takes a string player name
-and a 2-dimensional array board as parameters
+and a 2-dimensional 3 x 3 array as parameters
 and returns whether the player won the game.
 
 _**Hint**: What does a boolean accumulator / aggregator variable look like?_
