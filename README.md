@@ -102,6 +102,27 @@ Your solution may use string & file functions.
 _**Hint**: Looking for how to remove punctuation? 
 See https://www.techiedelight.com/remove-punctuations-string-python/_
 
+## Problem 2: Multiplication Table
+
+Write a function called `multiplication_table` that
+takes a width, height, & scaling factor as parameters
+and returns a two-dimensional array multiplication
+table scaled by the scaling factor.
+You should not be using _any_ functions other than range 
+in implementing your solution.
+
+![multiplication_table(5, 3, 1)](http://emhill.github.io/151/morea/12.arrays//fig1.png)
+![multiplication_table(5, 3, 2)](http://emhill.github.io/151/morea/12.arrays//fig2.png)
+
+
+| **Example calls** | **Returns** |
+| -------------- | --------- |
+| `print_2D(multiplication_table(5, 3, 1))` | `[1, 2, 3, 4, 5]`<br>`[2, 4, 6, 8, 10]`<br>`[3, 6, 9, 12, 15]` |
+| `print_2D(multiplication_table(5, 3, 2))` | `[2, 4, 6, 8, 10]`<br>`[4, 8, 12, 16, 20]`<br>`[6, 12, 18, 24, 30]` |
+
+<!--_**Hint**: use an extra queue to help!_-->
+
+## Problem 3: DID I WIN TIC-TAC-TOE?
 
 ## Getting started
 
