@@ -8,7 +8,6 @@
 # array as parameters and returns whether the
 # player won the game
 # HINT: What does a boolean accumulator look like?
-
 def did_I_win_2D(player, board):
     return False
 

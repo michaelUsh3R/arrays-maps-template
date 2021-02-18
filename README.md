@@ -128,6 +128,14 @@ Write a function `did_I_win_2D` that takes a string player name
 and a 2-dimensional 3 x 3 array as parameters
 and returns whether the player won the game.
 
+| **Example calls** | **Returns** |
+| -------------- | --------- |
+| `b = [["X", "O", "O"]] * 3`<br>`did_I_win_2D("X", b)` | `True` |
+| `b = [["X", "O", "O"]] * 3`<br>`did_I_win_2D("O", b)` | `True` |
+| `b = [`<br>`['O', 'O', 'X'],`<br>`['O', 'X', 'O'],`<br>`['X', 'O', 'O'] ]`<br>`did_I_win_2D("X", b)` | `True` |
+| `b = [`<br>`['O', 'O', 'X'],`<br>`['O', 'X', 'O'],`<br>`['X', 'O', 'O'] ]`<br>`did_I_win_2D("O", b)` | `False` |
+
+
 _**Hint**: What does a boolean accumulator / aggregator variable look like?_
 
 ## Getting started
