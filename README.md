@@ -19,7 +19,7 @@ You **SHOULD NOT** modify the following files:
 * `multiply_test.py`
 * `tic_tac_toe_test.py`
 
-Looking for additional practice problems to prepare for the exam? Checkout
+Looking for additional practice problems to prepare for the exam? Checkout:
 * programs in the `practice` folder
 
 <!--### General Hints
@@ -32,7 +32,7 @@ a string filename as a parameter and returns a
 dictionary mapping each word in the text file
 to the total number of times it occurs. All
 letters should be treated as lower case, and both
-punctuation and numbers should be ignored.
+punctuation and numbers should be ignored (best practice is to replace with a space).
 Letters separated by apostrophes should be left together
 (for example, `don't` becomes `dont`).
 Your solution may use string & file functions.
