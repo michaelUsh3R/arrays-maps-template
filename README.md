@@ -109,7 +109,7 @@ takes a width, height, & scaling factor as parameters
 and returns a two-dimensional array multiplication
 table scaled by the scaling factor.
 You should not be using _any_ functions other than `range` 
-in implementing your solution.
+or `append` in implementing your solution.
 
 ![multiplication_table(5, 3, 1)](http://emhill.github.io/151/morea/12.arrays//fig1.png)
 ![multiplication_table(5, 3, 2)](http://emhill.github.io/151/morea/12.arrays//fig2.png)
@@ -120,7 +120,7 @@ in implementing your solution.
 | `print_2D(multiplication_table(5, 3, 1))` | `[1, 2, 3, 4, 5]`<br>`[2, 4, 6, 8, 10]`<br>`[3, 6, 9, 12, 15]` |
 | `print_2D(multiplication_table(5, 3, 2))` | `[2, 4, 6, 8, 10]`<br>`[4, 8, 12, 16, 20]`<br>`[6, 12, 18, 24, 30]` |
 
-<!--_**Hint**: use an extra queue to help!_-->
+_**Hint**: Looking to initialize your array? Try a list comprehension:_ `[ [ 0 for i in range(w) ] for i in range(h) ]`
 
 ## Problem 3: DID I WIN TIC-TAC-TOE?
 
