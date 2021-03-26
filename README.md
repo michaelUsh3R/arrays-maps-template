@@ -120,7 +120,7 @@ or `append` in implementing your solution.
 | `print_2D(multiplication_table(5, 3, 1))` | `[1, 2, 3, 4, 5]`<br>`[2, 4, 6, 8, 10]`<br>`[3, 6, 9, 12, 15]` |
 | `print_2D(multiplication_table(5, 3, 2))` | `[2, 4, 6, 8, 10]`<br>`[4, 8, 12, 16, 20]`<br>`[6, 12, 18, 24, 30]` |
 
-_**Hint**: Looking to initialize your array? Try a list comprehension:_ `[ [ 0 for i in range(w) ] for i in range(h) ]`
+_**Hint**: Looking to initialize your array? Try a list comprehension:_ `[ [ 0 for i in range(w) ] for i in range(h) ]`. The code `[0]*w]*h` **WILL NOT work**!
 
 ## Problem 3: DID I WIN TIC-TAC-TOE?
 
