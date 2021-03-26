@@ -108,7 +108,7 @@ Write a function called `multiplication_table` that
 takes a width, height, & scaling factor as parameters
 and returns a two-dimensional array multiplication
 table scaled by the scaling factor.
-You should not be using _any_ functions other than `range` 
+You should not be using _any_ functions other than `range`, `len`, 
 or `append` in implementing your solution.
 
 ![multiplication_table(5, 3, 1)](http://emhill.github.io/151/morea/12.arrays//fig1.png)
