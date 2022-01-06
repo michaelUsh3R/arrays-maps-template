@@ -1,4 +1,4 @@
-# Technical HW: Arrays & Maps
+# Activity: Arrays & Maps
 Please complete the following 3 functions. 
 You can test by running the `pytest` or `python3` commands:
 
