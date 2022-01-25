@@ -1,4 +1,4 @@
-# Project 2: Arrays & Maps
+# Project 3: Arrays & Maps
 Please complete the following 3 functions. 
 You can test by running the `pytest` or `python3` commands:
 
