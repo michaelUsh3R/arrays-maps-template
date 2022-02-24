@@ -2,7 +2,7 @@
 # TO PROBLEM 3: DID I WIN TIC-TAC-TOE?
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Arrays & Maps
+# ASSIGNMENT:   Project 3: Arrays & Maps
 
 # takes a player character and a 2-dimensional
 # array as parameters and returns whether the
