@@ -2,7 +2,7 @@
 # TO PROBLEM 2: MULTIPLICATION TABLE
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Arrays & Maps
+# ASSIGNMENT:   Project 3: Arrays & Maps
 
 # Write a function called multiplication_table that
 # takes a width, height, & scaling factor as parameters
