@@ -2,7 +2,7 @@
 # TO PROBLEM 1: Word Frequency
 #
 # NAME:         FIXME
-# ASSIGNMENT:   Technical HW: Arrays & Maps
+# ASSIGNMENT:   Project 3: Arrays & Maps
 
 from operator import itemgetter
 import string
