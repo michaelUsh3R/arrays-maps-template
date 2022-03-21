@@ -39,8 +39,16 @@ def print_map_by_value(map):
         print("%6d %s" % (v, k))
 
 def main():
-    files = ["austen"]
+    files = ["pytest"]
     for f in files:
+        print("=" * 10, f, "=" * 10)
+        print_map_by_value(word_frequencies("files/" + f + ".txt"))
+    file = ["austen"]
+    for f in file:
+        print("=" * 10, f, "=" * 10)
+        print_map_by_value(word_frequencies("files/" + f + ".txt"))
+    filess = ["turing"]
+    for f in filess:
         print("=" * 10, f, "=" * 10)
         print_map_by_value(word_frequencies("files/" + f + ".txt"))
 
