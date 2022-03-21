@@ -19,7 +19,7 @@ import json
 # Hint: see https://www.techiedelight.com/remove-punctuations-string-python/
 
 def word_frequencies(filename):
-    file = open(filename, 'r')
+    file = open(filename, 'r', encoding='utf8')
     text = file.read().lower()
     file.close()
     text = text.replace("'", "")
@@ -28,6 +28,8 @@ def word_frequencies(filename):
         text = text.replace(c, ' ')
     d = {}
     for word in text.split():
+        word = ''.join((x for x in word if x.isalpha()))
+        if word == "": continue
         if word in d:
             d[word] += 1
         else:
